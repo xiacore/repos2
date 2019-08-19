@@ -20,6 +20,7 @@ public class UserController {
     @ResponseBody
     public List<User> findAll(){
         System.out.println("222修改");
+        System.out.println("333修改");
         System.out.println(userService.findAll());
         return  userService.findAll();
 
