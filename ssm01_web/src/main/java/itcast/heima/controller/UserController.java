@@ -19,8 +19,11 @@ public class UserController {
     @RequestMapping("/findAll")
     @ResponseBody
     public List<User> findAll(){
+        System.out.println("222修改");
         System.out.println(userService.findAll());
         return  userService.findAll();
+
+
     }
 
     @RequestMapping("/findAll1")
