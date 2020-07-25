@@ -29,8 +29,15 @@ public class UserController {
 
     @RequestMapping("/findAll1")
     @ResponseBody
-    public List<TabUser> findAll1(){
+    public List<TabUser> findAll1() {
         System.out.println(userService.findAll1());
-        return  userService.findAll1();
+        return userService.findAll1();
+    }
+
+    @RequestMapping("/findAll3")
+    @ResponseBody
+    public List<TabUser> findAll3() {
+        System.out.println(userService.findAll1());
+        return userService.findAll1();
     }
 }
